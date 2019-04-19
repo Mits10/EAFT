@@ -51,7 +51,7 @@
     <div class="container">
         <form class="form" method="post" action="traveler.php">
             <h3 class="main-head">Traveler Information Form</h3><br>
-            Doctor Id(automatic by the system):
+            Traveler Id(automatic by the system):
             <input type="text" name="doctor-id">
             First name:
              <input type="text" name="firstname">

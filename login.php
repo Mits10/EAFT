@@ -20,8 +20,8 @@
 
       <ul>
         <li class="active"> <a href="index.php">Home</a></li>
-        <li><a href="about.html">About</a></li>
         <li><a href="contact.php">Contact Us</a></li>
+				<li><a href="profile.php">Contact Us</a></li>
           </ul>
 
       </div>
@@ -40,8 +40,8 @@
               <p>Password</p>
               <input type="password" name="password" placeholder="Enter Password">
               <input type="submit" value="Login">
-              <a href="#">Lost Your Password?</a><br>
-              <a href="#">Don't Have An Account?</a>
+              <a href="">Lost Your Password?</a><br>
+              <a href="form.php">Don't Have An Account?</a>
     </form>
      </div>
 <?php
@@ -53,7 +53,14 @@ $con = new mysqli('localhost', $user, $pass, $db) or die('unable to connect');
     $sql = "SELECT first_name ,password FROM travelerinterface WHERE first_name =$_POST[name] AND password=$_POST[password] ; ";
     $result = mysqli_query($con,$sql);
     $resultCheck = mysqli_num_rows($result);
+		if($resultCheck>0)
+		{
+			echo $row ['t_id']."<br>";
+		}
 ?>
+<div class="profile">
+	<h1>User Profile</h1>
+	<a href="profile.php">User Information</a>
 </header>
 </body>
 </html>

@@ -66,23 +66,9 @@
              <input type="date" name="birthdate">
             Date Of Admission:
             <input type="date" name="admissiondate"><br>
-            <h3>Profession</h3>
-            <select name="Profession">
-            <option value="government">Government Job</option>
-            <option value="private">Private Job</option>
-            <option value="business">Business</option>
-            <option value="farmer">Farmer</option>
-            <option value="retire">Retire</option>
-            <option value="other">Other</option>
-            </select>
             Amount Deposited:
             <input type="text" name="deposit">
-            Choose:
-            <select name="choice">
-            <option value="kebin">Kebin</option>
-            <option value="ward">Ward</option>
-            </select><br><br>
-            <button type="submit" name="submit">Submit</button>
+             button type="submit" name="submit">Submit</button>
         </form>
   </div>
 

@@ -25,7 +25,7 @@
         <form class="" method="post" action="adinfo.php">
             <h3 class="main-head">Room Renter Form</h3><br>
             <h3>General Information</h3><br>
-            Patient Id(automatic by the system):
+            Room Renter Id(automatic by the system):
             <input type="text" name="r-id">
 
             First name:
